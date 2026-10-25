@@ -1,0 +1,5 @@
+url=jdbc:mysql://localhost:3306/cedac?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+user=root
+password=change_me
+cloud.user=cloudadmin
+cloud.password=change_me_too

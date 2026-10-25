@@ -1,0 +1,10 @@
+<%@ page import="com.cryptdac.util.Html" %>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crypt-DAC</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>Crypt-DAC: cryptographically enforced access control</h1>
+<% if (session.getAttribute("role") != null) { %>
+<form method="post" action="auth"><input type="hidden" name="action" value="logout">
+<%= Html.esc(session.getAttribute("role")) %> <button>Sign out</button></form>
+<% } %></header><main>
+<% if (request.getParameter("msg") != null) { %><div class="msg" role="status"><%= Html.esc(request.getParameter("msg")) %></div><% } %>
