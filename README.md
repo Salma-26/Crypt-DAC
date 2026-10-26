@@ -1,4 +1,4 @@
-# Crypt-DAC: Cryptographically Enforced Dynamic Access Control
+````# Crypt-DAC: Cryptographically Enforced Dynamic Access Control
 
 A Java/JSP/Servlet/MySQL web app for an untrusted cloud (honest-but-curious). Revoking access
 adds an encryption layer in the cloud, so the owner never re-uploads the file.
@@ -28,8 +28,7 @@ mvn clean package
 cp target/crypt-dac.war $TOMCAT_HOME/webapps/
 $TOMCAT_HOME/bin/startup.sh        # Windows: bin\startup.bat
 ```
-Open http://localhost:8080/crypt-dac/
-
+Open http://localhost:8080/crypt-dac/ See the full [Project Guide](docs/PROJECT_GUIDE.md).```
 ## Try it
 1. Register an owner (`alice_owner`) and two users (`bob`, `carol`).
 2. Sign in as cloud (`cloud.user` / `cloud.password` from db.properties) and **Authorize** all three.
